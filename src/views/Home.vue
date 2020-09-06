@@ -1,18 +1,38 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Accessories Web Shop</h1>
+    <Nav />
+    <CountOrder />
+    <img class="accessories" alt="accessories" src="../assets/photo.jpg">
+    <Product />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Nav from '@/components/Nav.vue'
+import Product from '@/components/Product.vue'
+import CountOrder from '@/components/CountOrder.vue'
+
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Product,
+    Nav,
+    CountOrder
   }
 }
 </script>
+<style scoped>
+.accessories {
+  height: 25rem;
+  width: 50rem;
+  padding: 60px;
+}
+h1{
+  color: rgb(221, 170, 178);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+</style>
