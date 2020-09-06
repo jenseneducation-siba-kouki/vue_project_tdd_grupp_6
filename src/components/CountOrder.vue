@@ -20,7 +20,7 @@ export default {
       this.Count++;
     },
     decrease(){
-      this.Count--;
+      this.Count=0;
     }
   }
 }

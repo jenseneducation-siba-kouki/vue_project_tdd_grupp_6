@@ -25,7 +25,7 @@ it('should increase the displayed value when click on Increase button', async ()
 })
 
 it('should decrease the displayed value when click on Decrease button', async () => {
-  const expectedCount = -1;
+  const expectedCount = 0;
   const wrapper = shallowMount(CountOrder);
   const button = wrapper.find('.decrease');
   const element = wrapper.find('.Count');
