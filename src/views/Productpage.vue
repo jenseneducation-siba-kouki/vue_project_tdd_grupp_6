@@ -25,7 +25,7 @@ export default {
   name: "Productspage",
   components: {
     Nav,
-    CountOrder
+    CountOrder,
   },
   data() {
     return {
