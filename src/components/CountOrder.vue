@@ -1,7 +1,7 @@
 <template>
   <div class="CountOrder">
      <button class="increase" @click="increase"> + </button>
-         <span >{{ Count }}</span>
+         <span >Count: {{ Count }}</span>
     <button class="decrease" @click="decrease"> - </button>
 
   </div>
