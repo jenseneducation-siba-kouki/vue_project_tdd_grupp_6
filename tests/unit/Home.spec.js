@@ -11,3 +11,13 @@ describe('Home', () => {
     expect(element).toBe(msg)
   })
 })
+
+// describe('click event', () => {
+//   it('add to cart button click should increment the count next to cart', async () => {
+//     expect(wrapper.text()).toContain('0')
+//     const button = wrapper.find('button')
+//     await button.trigger('click')
+//     expect(wrapper.text()).toContain('1')
+//   })
+// })
+

@@ -2,25 +2,40 @@
   <div class="home">
     <header>
       <Nav />
+      <button v-on:click="navigateTo('products')">view products</button>
       {{cart.length}} in cart
-      <button>view cart</button>
+      <button v-on:click="navigateTo('cart')">view cart</button>
     </header>
+    <div v-if="page === 'cart'">
+      <h2>cart page</h2>
+      <div class="wrapper">
+        <div v-for="(product,index) in cart" :key="index">
+          <h2>{{product.name}}</h2>
 
-    <h1>Accessories Web Shop</h1>
-
-    <img class="accessories" alt="accessories" src="../assets/photo.jpg" />
-
-    <h1>products</h1>
-    <div class="wrapper">
-      <div v-for="product in products" :key="product.name">
-        <h2>{{product.name}}</h2>
-
-        <img :src="product.image" width="200" height="200" />
-        <div>{{product.cost}}</div>
-        <button v-on:click="addItemToCart(product)">add to cart</button>
-        <CountOrder />
+          <img :src="product.image" width="200" height="200" />
+          <div>{{product.cost}}</div>
+          <button v-on:click="removeItem(product)">remove</button>
+        </div>
       </div>
     </div>
+    <div v-if="page === 'products'">
+      <h1>Accessories Web Shop</h1>
+
+      <img class="accessories" alt="accessories" src="../assets/photo.jpg" />
+
+      <h1>products</h1>
+      <div class="wrapper">
+        <div v-for="(product, index) in products" :key="index">
+          <h2>{{product.name}}</h2>
+
+          <img :src="product.image" width="200" height="200" />
+          <div>{{product.cost}}</div>
+          <button v-on:click="addItemToCart(product)">add to cart</button>
+          <CountOrder />
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
   </div>
 </template>
 
@@ -38,7 +53,7 @@ export default {
   },
   data: () => {
     return {
-      page: "cart",
+      page: "products",
       cart: [],
       products: [
         {
@@ -60,6 +75,12 @@ export default {
       this.cart.push(product);
       console.log(this.cart);
     },
+    navigateTo(page) {
+      this.page = page;
+    },
+    removeItem(product) {
+      this.cart.splice(this.cart.indexOf(product));
+    },
   },
 };
 </script>
@@ -77,7 +98,7 @@ h1 {
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 1px black solid;
+  /* border: 1px black solid; */
 }
 header {
   height: 100px;
