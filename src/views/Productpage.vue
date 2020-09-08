@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Nav />
+    <!-- <Nav />
 
     <div class="product-div">
       <ul>
@@ -12,35 +12,35 @@
           <CountOrder />
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 
 
 <script>
-import Nav from "@/components/Nav.vue";
-import CountOrder from "@/components/CountOrder";
-import axios from "axios";
-export default {
-  name: "Productspage",
-  components: {
-    Nav,
-    CountOrder,
-  },
-  data() {
-    return {
-      products: [],
-    };
-  },
-  async created() {
-    try {
-      const res = await axios.get(`http://localhost:3000/products`);
-      this.products = res.data;
-    } catch (e) {
-      console.log(e);
-    }
-  },
-};
+// import Nav from "@/components/Nav.vue";
+// import CountOrder from "@/components/CountOrder";
+// import axios from "axios";
+// export default {
+//   name: "Productspage",
+//   components: {
+//     Nav,
+//     CountOrder,
+//   },
+//   data() {
+//     return {
+//       products: [],
+//     };
+//   },
+//   async created() {
+//     try {
+//       const res = await axios.get(`http://localhost:3000/products`);
+//       this.products = res.data;
+//     } catch (e) {
+//       console.log(e);
+//     }
+//   },
+// };
 </script>
 
 <style scoped>
