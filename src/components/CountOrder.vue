@@ -20,9 +20,11 @@ export default {
       this.Count++;
     },
     decrease(){
-      this.Count=0;
+      if(this.Count>0){
+      this.Count--;
     }
   }
+}
 }
 </script>
 

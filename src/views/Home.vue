@@ -19,9 +19,9 @@
       </div>
     </div>
     <div v-if="page === 'products'">
-      <h1>Accessories Web Shop</h1>
+      <h1>Find Your Book</h1>
 
-      <img class="accessories" alt="accessories" src="../assets/photo.jpg" />
+      <img class="book" alt="book" src="../assets/book.jpg" />
 
       <h1>products</h1>
       <div class="wrapper">
@@ -85,13 +85,13 @@ export default {
 };
 </script>
 <style scoped>
-.accessories {
+.book {
   height: 25rem;
-  width: 50rem;
+  width: 70rem;
   padding: 60px;
 }
 h1 {
-  color: rgb(221, 170, 178);
+  color: rgb(165, 110, 65);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
