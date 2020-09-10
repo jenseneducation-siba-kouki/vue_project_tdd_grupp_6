@@ -11,10 +11,10 @@
       <div class="wrapper">
         <div v-for="(product,index) in cart" :key="index">
           <h2>{{product.name}}</h2>
-
           <img :src="product.image" width="200" height="200" />
           <div>{{product.cost}}</div>
-          <button v-on:click="removeItem(product)">remove</button>
+          <CountOrder v-if="page === 'cart'"/>
+          <button v-on:click="removeItem(product.id)">remove</button>
         </div>
       </div>
     </div>
@@ -31,7 +31,6 @@
           <img :src="product.image" width="200" height="200" />
           <div>{{product.cost}}</div>
           <button v-on:click="addItemToCart(product)">add to cart</button>
-          <CountOrder />
         </div>
       </div>
     </div>
@@ -57,26 +56,41 @@ export default {
       cart: [],
       products: [
         {
+          id: 1,
           name: "books",
           cost: "$20",
           image: "https://hmp.me/dbvr",
+          qty:4,
         },
         {
+          id: 2,
           name: "J.R.R Tolkien",
           cost: "$50",
           image: "https://hmp.me/dbvs",
+          qty:3,
         },
           {
+            id: 3,
           name: "J.R.R Tolkien",
           cost: "$50",
           image: "https://hmp.me/dbvs",
+          qty:2,
         },
         {
+          id: 4,
           name: "books",
           cost: "$20",
           image: "https://hmp.me/dbvr",
+          qty:1,
         },
       ],
+      product:{
+         id: "",
+         name: "",
+         cost: "",
+         image: "",
+         qty:"",
+      }
     };
   },
   methods: {
@@ -91,8 +105,8 @@ export default {
     removeItem(product) {
       this.cart.splice(this.cart.indexOf(product));
     },
-  },
-};
+    }
+  }
 </script>
 <style scoped>
 .book {
