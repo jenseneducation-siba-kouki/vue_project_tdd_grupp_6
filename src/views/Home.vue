@@ -66,6 +66,16 @@ export default {
           cost: "$50",
           image: "https://hmp.me/dbvs",
         },
+          {
+          name: "J.R.R Tolkien",
+          cost: "$50",
+          image: "https://hmp.me/dbvs",
+        },
+        {
+          name: "books",
+          cost: "$20",
+          image: "https://hmp.me/dbvr",
+        },
       ],
     };
   },

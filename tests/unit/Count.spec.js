@@ -25,7 +25,7 @@ it('should decrease the displayed value when click on Decrease button', async ()
   const wrapper = shallowMount(CountOrder);
   const button = wrapper.find('.decrease');
   await button.trigger('click');
-  expect(wrapper.text()).toContain('Count: 1')})
+  expect(wrapper.text()).toContain('Count: 0')})
 
 it('should not decrease under 0', async () => {
   const wrapper = shallowMount(CountOrder);
