@@ -1,0 +1,35 @@
+   Personer som har deltagit i denna grupp projekt: (fwk19s)
+    Siba Kouki 
+    Ella Götbring
+    Yasmin 
+
+GITHUB: https://github.com/jenseneducation-siba-kouki/vue_project_tdd_grupp_6
+TRELLO: https://trello.com/b/wzZFn58I/vueprojecttddgrupp6
+KRAVSPEC: https://docs.google.com/document/d/1dgLMldpfOW2lc1qwo4dL-mPjaqmp2LbaJjpgcmjILlI/edit?ts=5f5b6332
+
+
+1-Vad har ni lärt er av projektet?
+Vi har lärt oss hur man arbetar med de agila metoder vi lärt oss i tidigare kurser, och hur man använder sig av metoderna i ett riktigt projekt från start till inlämning. 
+Vi har lärt oss om hur testing fungerar och hur måste man planera bättre för att ibland det blir inte som man tänker.
+
+2-Hur fördelade ni arbetet? (vem gjorde vad)
+Vi började med att hela första lektionen diskutera och prioritera vad som behöver göras tex skapa en ny repository (Siba),
+ komma igång med trello(Yasmin) och skriva en kravspecifikation i trello.
+  Alla i gruppen hjälptes åt att baserat på kraven formulera passande user stories.
+ Sen skapade alla varsin bransch i github och började med att kolla på trello vilket kort man skulle arbeta med. 
+
+3-Fundera över vilka ändringar ni skulle göra om ni skulle fortsätta med projektet i samma grupp:
+* Vad skulle vi börja göra?
+vi behöver att planera bättre och dela jobbet från först.
+
+* Vad skulle vi sluta göra?
+Vi skulle delat upp arbetsuppgifterna och gjort dom mer tydligt vad varje person i gruppen har i uppgift att göra. 
+
+* Vad skulle vi fortsätta göra?
+vi skulle fortsätta att hjälpa varandra och fortsätta att använda trello.
+
+4-Vilka krav var svårast respektive lättast att skriva test för? 
+router test och count product.
+
+5-Fanns det något ni hade tänkt göra, som ni inte hann med? Vad berodde det på?
+få totalbelopp, sök efter produkt, information om produkt, design mer och göra mer testing och det berodde på att vi har inte planerat bra och inte delat upp jobben från början och fokuserade mycket bara på hur ska vi skriva testing utan att planera 
