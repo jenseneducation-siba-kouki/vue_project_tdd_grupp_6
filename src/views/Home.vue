@@ -2,6 +2,11 @@
   <div class="home">
     <header>
       <Nav />
+      <br />
+      <br />
+      <br />
+      <br />
+
       <button v-on:click="navigateTo('products')">view products</button>
       {{cart.length}} in cart
       <button v-on:click="navigateTo('cart')">view cart</button>
@@ -13,7 +18,7 @@
           <h2>{{product.name}}</h2>
           <img :src="product.image" width="200" height="200" />
           <div>{{product.cost}}</div>
-          <CountOrder v-if="page === 'cart'"/>
+          <CountOrder v-if="page === 'cart'" />
           <button v-on:click="removeItem(product.id)">remove</button>
         </div>
       </div>
@@ -60,37 +65,37 @@ export default {
           name: "books",
           cost: "$20",
           image: "https://hmp.me/dbvr",
-          qty:4,
+          qty: 4,
         },
         {
           id: 2,
           name: "J.R.R Tolkien",
           cost: "$50",
           image: "https://hmp.me/dbvs",
-          qty:3,
+          qty: 3,
         },
-          {
-            id: 3,
+        {
+          id: 3,
           name: "J.R.R Tolkien",
           cost: "$50",
           image: "https://hmp.me/dbvs",
-          qty:2,
+          qty: 2,
         },
         {
           id: 4,
           name: "books",
           cost: "$20",
           image: "https://hmp.me/dbvr",
-          qty:1,
+          qty: 1,
         },
       ],
-      product:{
-         id: "",
-         name: "",
-         cost: "",
-         image: "",
-         qty:"",
-      }
+      product: {
+        id: "",
+        name: "",
+        cost: "",
+        image: "",
+        qty: "",
+      },
     };
   },
   methods: {
@@ -105,8 +110,8 @@ export default {
     removeItem(product) {
       this.cart.splice(this.cart.indexOf(product));
     },
-    }
-  }
+  },
+};
 </script>
 <style scoped>
 .book {
@@ -114,6 +119,7 @@ export default {
   width: 70rem;
   padding: 60px;
 }
+
 h1 {
   color: rgb(165, 110, 65);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -124,6 +130,7 @@ h1 {
   grid-template-columns: 1fr 1fr;
   /* border: 1px black solid; */
 }
+
 header {
   height: 100px;
 }
