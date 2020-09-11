@@ -2,10 +2,6 @@
   <div class="home">
     <header>
       <Nav />
-      <br />
-      <br />
-      <br />
-      <br />
 
       <button v-on:click="navigateTo('products')">view products</button>
       {{cart.length}} in cart

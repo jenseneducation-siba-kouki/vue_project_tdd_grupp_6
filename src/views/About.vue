@@ -53,13 +53,13 @@ h4 {
   text-align: center;
   line-height: 30px;
   color: rgb(189, 124, 156);
-  font-size: 10px;
+  font-size: 15px;
 }
 .contact {
   text-decoration: none;
   margin: 10px;
   padding: 5px;
-  font-size: 1.6rem;
-  color: black;
+  font-size: 1.8rem;
+  color: rgb(170, 74, 122);
 }
 </style>

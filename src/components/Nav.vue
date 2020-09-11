@@ -17,14 +17,13 @@ export default {
 .shopping {
   position: absolute;
   right: 0;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 .nav {
   position: relative;
   margin: 1px;
   padding: 35px;
-  background-color: rgb(189, 124, 156);
   /* background-color: cadetblue; */
 }
 .link {
